@@ -127,3 +127,106 @@ h1:nth-of-type(1){
     
 }
 
+
+#cx_conteudo2{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 140px;
+}
+
+#criancas3{
+    background-image: url('imagens/criancas3.jpg');
+    width: 70%;
+    height: 400px;
+    background-size: 100% 100%;
+    border-radius: 50px 0px 0px 50px;
+}
+#txt_conteudo2{
+    width: 30%;
+    background-color: var(--verde_limao);
+    color: var(--branco);
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+#rodape{
+    background-color: var(--azul_claro);
+    height: 400px;
+    margin-top: 140px;
+    /*Permitir que as DIVs fiquem uma ao lado da outra*/
+    display: flex;
+    /* Alinhamento na vertical*/
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#coluna1, #coluna2, #coluna3{
+    height: 300px;
+    width: 33%;
+    color: var(--branco);
+    text-align: left;
+    padding: 20px;
+}
+#coluna1 h1{
+    margin-top: 0px;
+}
+
+.icones{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+#copyright{
+    background-color: var(--azul_claro);
+    height: 50px;
+    color: var(--branco);
+}
+/* Formatar o elemento 'SPAN' que está dentro da div #copyright*/
+#copyright span{
+    border-top: 2px solid white;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+/* Formatar o elemento 'A' que está dentro da div #copyright*/
+#copyright a{
+    color: yellow;
+    text-decoration: none;
+}
+/* Formatar o elemento 'A' que está dentro da div
+#copyright quando passar o mouse em cima*/
+#copyright a:hover{
+    color: blue;
+}
+#menu_topo_mobile{
+    height: 100px;
+    background-color: red;
+    align-items: center;
+    display: none;
+}
+
+/*CONFIGURAÇÕES DE RESPONSIVIDADE*/
+/* Configurações para mobile*/
+@media screen and (max-width:480px) {
+    #menu_topo_mobile{
+        display: flex;
+    }
+    #menu_topo{
+        display: none;
+    }
+}
+/* Configurações para tablet*/
+@media screen and (min-width:481px) and (max-width: 1024px){
+    #menu_topo_mobile{
+        display: flex;
+    }
+    #menu_topo{
+        display: none;
+    }
+}
+/* Configurações EXTRA para PC*/
+@media screen and (min-width: 1025px){
+    
+}
