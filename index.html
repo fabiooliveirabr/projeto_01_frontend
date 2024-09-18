@@ -11,15 +11,24 @@
 <body>
     
     <div id="container">
+        <div id="menu_lateral">
+            <span id="botaoX" onclick="fecharMenu()"> X </span>
+            <div id="menu_ativado" class="itens_menu">Home</div>
+            <a href="servicos.html"> <div class="itens_menu">Serviços</div>  </a>
+            <div class="itens_menu">Sobre nós</div>
+            <div class="itens_menu">Nosso time</div>
+            <div class="itens_menu">Contato</div>
+        </div>
+
         <div id="menu_topo_mobile">
-            <i class="fi fi-sr-menu-burger"></i>
+            <i id="botaoMenu" onclick="abrirMenu()" class="fi fi-sr-menu-burger"></i>
         </div>
 
         <div id="menu_topo">
             <img id="logomarca" src="imagens/logomarca_branca.png">
             <div id="cx_menu">
                 <div id="menu_ativado" class="itens_menu">Home</div>
-                <div class="itens_menu">Serviços</div>
+                <a href="servicos.html"> <div class="itens_menu">Serviços</div> </a>
                 <div class="itens_menu">Sobre nós</div>
                 <div class="itens_menu">Nosso time</div>
                 <div class="itens_menu">Contato</div>
@@ -85,6 +94,19 @@
 
 
     </div> <!-- Fim do container -->
+
+    <script>
+        //Criar uma funcionalidade para abrir o menu lateral
+        function abrirMenu(){
+            var objetoMenu = document.getElementById("menu_lateral");
+            objetoMenu.classList.add("aparecer");
+        }
+        //Criar uma funcionalidade para fechar o menu lateral
+        function fecharMenu(){
+            var objetoMenu = document.getElementById("menu_lateral");
+            objetoMenu.classList.remove("aparecer");
+        }
+    </script>
 
 </body>
 </html>
